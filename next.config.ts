@@ -1,9 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  reactStrictMode: true, // опционально, но полезно
-  output: 'export',       // <-- это заставляет Next.js создавать out/ после билда
+  reactStrictMode: true,
+  output: "export",
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: "https",
